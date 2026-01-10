@@ -3,8 +3,11 @@ all:
 	g++ /home/kronos/Projects/basics/obj/main.o -o /home/kronos/Projects/basics/bin/app
 
 clean:
-	rm -f /home/kronos/Projects/basics/obj/main.o
-	rm -f /home/kronos/Projects/basics/bin/app
+	rm -r /home/kronos/Projects/basics/obj/main.o
+	rm -r /home/kronos/Projects/basics/bin/app
 
 install: all
 	cp /home/kronos/Projects/basics/bin/app /home/kronos/bin/app
+
+uninstall:
+	rm -r /home/kronos/bin/app
